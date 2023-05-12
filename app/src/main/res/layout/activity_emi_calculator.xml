@@ -6,6 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".feaure.EMI_Calculator">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="calculate EMI"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/EMIresult"
+        app:layout_constraintEnd_toEndOf="@+id/EMIresult"
+        app:layout_constraintStart_toStartOf="@+id/EMIresult"
+
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="150dp"
+        android:textSize="32sp"
+        android:id="@+id/EMIresult"
+        />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,40 +36,46 @@
         android:gravity="center"
         android:orientation="vertical"
         >
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Loan Amount"
-                />
-            <EditText
-                android:layout_width="180dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/edittext_border"
-                />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:gravity="center"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Enter Loan Amount"/>
+        <EditText
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/loanamt"
+            android:text=""
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Interest rate(Monthly)"/>
+        <EditText
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/interestrate"
+            android:text=""
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Loan tenure(Months)"/>
+        <EditText
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/monthsTenure"
+            android:text=""
+            android:gravity="center"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:id="@+id/calEMIbtn"
+            />
 
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Loan Amount"
-                />
-            <EditText
-                android:layout_width="180dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/edittext_border"
-                />
-        </LinearLayout>
 
     </LinearLayout>
 
