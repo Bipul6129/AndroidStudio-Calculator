@@ -3,6 +3,7 @@ package com.example.calculator.feaure;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,6 +25,9 @@ public class SI_Calculator extends AppCompatActivity {
         time = findViewById(R.id.SItime);
         rate = findViewById(R.id.SIrate);
 
+        principal.setInputType(InputType.TYPE_CLASS_NUMBER);
+        time.setInputType(InputType.TYPE_CLASS_NUMBER);
+        rate.setInputType(InputType.TYPE_CLASS_NUMBER);
         SIBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

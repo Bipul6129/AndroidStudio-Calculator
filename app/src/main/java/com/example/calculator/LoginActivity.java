@@ -26,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(getusername.getText().toString().equals("190619")&&getuserPass.getText().toString().equals("190619")||1==1){
+                if(getusername.getText().toString().equals("190619")&&getuserPass.getText().toString().equals("190619")){
                     System.out.println("Logged in");
                     Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
                     startActivity(intent);
